@@ -1,0 +1,138 @@
+.carousel-item img {
+    transition: filter 0.5s ease;
+    height: 800px;
+    object-fit: cover;
+}
+.welcome-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-in-out;
+}
+.welcome-text span {
+    font-style: italic;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+.overlay-box {
+    position: relative;
+    margin-top: -50px;
+    width: 90%;
+    z-index: 10;
+}
+.overlay-box .row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.overlay-box .card {
+    flex: 1;
+    min-height: 300px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.overlay-box .card:hover {
+    transform: translateY(-10px);
+}
+.overlay-box .card a {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.overlay-box .card a:hover {
+    background-color: white;
+    color: rgb(120, 115, 115);
+}
+@media (max-width: 768px) {
+    .overlay-box .row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    .overlay-box .card {
+        min-width: 250px;
+        min-height: 250px;
+        padding: 20px;
+        scroll-snap-align: center;
+    }
+}
+.school-principal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  
+  .gallery-track {
+    animation: scrollGallery 20s linear infinite;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .gallery-img {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes scrollGallery {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .divider {
+    border-top: 2px solid #007bff;
+    margin: 10px auto;
+    width: 50%;
+  }
+  .galeri-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f7b84b; /* Warna kuning/oren */
+    margin: 8px auto 0;
+    border-radius: 2px;
+  }
+  

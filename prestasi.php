@@ -1,0 +1,115 @@
+<?php include 'navbar.php'; ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 80px; /* Agar konten tidak tertutup navbar */
+        }
+        .container {
+            text-align: center;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .divider {
+            border-top: 2px solid #007bff;
+            margin: 10px auto;
+            width: 50%;
+        }
+        .image-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 80%; /* Mengecilkan gambar agar lebih rapi */
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+        .image-caption {
+            position: absolute;
+            top: 10%; /* Teks muncul di atas gambar */
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .more-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .more-button button {
+            background-color: #ffc107;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">PRESTASI</h1>
+        <div class="divider"></div>
+
+        <div class="row" id="image-row">
+            <!-- 6 Gambar Prestasi Awal -->
+            <div class="col-md-4 col-sm-6 image-container">
+                <img src="images/baground1.JPG" alt="Prestasi 1">
+                <div class="image-caption">Prestasi 1</div>
+            </div>
+            <div class="col-md-4 col-sm-6 image-container">
+                <img src="images/baground2.JPG" alt="Prestasi 2">
+                <div class="image-caption">Prestasi 2</div>
+            </div>
+            <div class="col-md-4 col-sm-6 image-container">
+                <img src="images/baground3.JPG" alt="Prestasi 3">
+                <div class="image-caption">Prestasi 3</div>
+            </div>
+            <div class="col-md-4 col-sm-6 image-container">
+                <img src="images/galeri 10.jpg" alt="Prestasi 4">
+                <div class="image-caption">Prestasi 4</div>
+            </div>
+            <div class="col-md-4 col-sm-6 image-container">
+                <img src="images/galeri 11.jpg" alt="Prestasi 5">
+                <div class="image-caption">Prestasi 5</div>
+            </div>
+            <div class="col-md-4 col-sm-6 image-container">
+                <img src="images/galeri 6.jpg" alt="Prestasi 6">
+                <div class="image-caption">Prestasi 6</div>
+            </div>
+            <div class="col-md-4 col-sm-6 image-container">
+                <img src="images/galeri 3.jpg" alt="Prestasi 7">
+                <div class="image-caption">Prestasi 6</div>
+            </div>
+            <div class="col-md-4 col-sm-6 image-container">
+                <img src="images/galeri 4.jpg" alt="Prestasi 8">
+                <div class="image-caption">Prestasi 6</div>
+            </div>
+            <div class="col-md-4 col-sm-6 image-container">
+                <img src="images/galeri 1.jpg" alt="Prestasi 9">
+                <div class="image-caption">Prestasi 6</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<?php include 'footer.php'; ?>
